@@ -1,0 +1,986 @@
+:root {
+    --font: Tahoma, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assests/imgs/shape-a.png");
+}
+
+h1 {
+    font-family: var(--font);
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+nav {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background: white;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 99999;
+}
+
+#home {
+    margin-top: 30px;
+}
+
+nav .logo {
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo span i {
+    color: red;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+nav ul li #do_btn:hover {
+    background-color: white;
+    color: black;
+}
+
+nav .menu-btn i {
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#do_btn {
+    border: solid 2px #0652DD;
+    border-radius: 25px;
+    transition: 0.3s;
+    background-color: #0652DD;
+    color: white;
+    width: 40%;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: solid 10px blue;
+    outline: none;
+    color: blue;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 50px;
+    font-weight: bold;
+}
+
+.main_img {
+    width: 100%;
+}
+
+.main_line {
+    display: flex;
+    padding: 5%;
+    flex-direction: row;
+}
+
+.main_line h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.main_line span {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.virus {
+    display: flex;
+    flex-direction: column;
+}
+
+#covid {
+    color: red;
+}
+
+.main_content {
+    padding: 4%;
+    font-size: 18px;
+}
+
+.main_btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.main_btn button {
+    border: solid 2px #0652DD;
+    padding: 7px 31px;
+    border-radius: 25px;
+    transition: 0.3s;
+    background-color: #0652DD;
+    color: white;
+    width: 40%;
+}
+
+.main_btn button i {
+    padding-left: 10px;
+}
+
+.main_btn span {
+    color: blue;
+    padding-top: 10px;
+}
+
+.main_btn span i {
+    color: blue;
+    padding-left: 10px;
+}
+
+.update {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.update p {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: gray;
+}
+
+.update span {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.update div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about span {
+    color: blue;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.about h1 {
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+}
+
+.about_breif {
+    margin-top: 30px;
+}
+
+.about_table {
+    text-align: center;
+    margin-top: 20px
+}
+
+.about_table tr td i {
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.about_table td {
+    color: blue;
+}
+
+table {
+    width: 90%;
+}
+
+table td {
+    border: 1px solid #ced6e0;
+    padding: 10px;
+}
+
+table th {
+    border: 1px solid #ced6e0;
+    padding: 10px;
+}
+
+.spread h6 {
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+}
+
+.transmission_title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1%;
+}
+
+.transmission_breif {
+    text-align: center;
+    font-size: 30px;
+    margin: 2%;
+}
+
+.transmission {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card hr {
+    width: 100%;
+    height: 5px;
+    color: #3742fa;
+}
+
+.card {
+    width: 24vw;
+    text-align: left;
+    padding: 1%;
+    margin: 1%
+}
+
+.card p {
+    text-align: left;
+    font-size: 18px;
+}
+
+.title_transmission {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.question_table {
+    padding-top: 1%;
+}
+
+.questions {
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+.questions i {
+    padding: 0 10px 0 0;
+}
+
+.questions button {
+    border: solid 2px #0652DD;
+    padding: 7px 31px;
+    border-radius: 11px;
+    transition: 0.3s;
+    background-color: #0652DD;
+    color: white;
+}
+
+.symptom_main {
+    text-align: center;
+}
+
+.symptom_main h6 {
+    color: blue;
+    text-transform: uppercase;
+}
+
+.symptom_main h1 {
+    text-transform: uppercase;
+}
+
+.symptom_main p {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.symptom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.symptom .card {
+    width: 100%;
+    text-align: left;
+    padding: 1%;
+    float: left;
+    margin: 1%
+}
+
+.symptom .card p {
+    text-align: left;
+}
+
+.card_img {
+    margin: -20px -20px 0 0;
+}
+
+.card_img img {
+    width: 20%;
+    border-radius: 50%;
+    float: right;
+    object-fit: cover;
+}
+
+.card_title {
+    margin-top: -30px;
+}
+
+.card_title p {
+    color: blue;
+}
+
+.stay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.stay i {
+    height: 50px;
+    color: #0097e6;
+}
+
+.stay span {
+    padding: 0 0 0 15px;
+}
+
+.questions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.questions i {
+    padding: 0 10px 0 0;
+}
+
+.questions button {
+    border: solid 2px #0652DD;
+    padding: 7px 31px;
+    border-radius: 11px;
+    transition: 0.3s;
+    background-color: #0652DD;
+    color: white;
+}
+
+.check_main {
+    text-align: center;
+    justify-content: center;
+}
+
+.check_main h6 {
+    text-transform: uppercase;
+    color: blue;
+}
+
+.check_main h1 {
+    text-transform: uppercase;
+    padding: 1%;
+}
+
+.check_main p {
+    font-size: 16px;
+    padding: 3%;
+}
+
+.prevention {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.prevention img {
+    width: 40%;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.prevention p {
+    font-size: 15px;
+    padding: 2%;
+}
+
+.check {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.check button {
+    border: solid 1px #0652DD;
+    padding: 7px 31px;
+    border-radius: 30px;
+    transition: 0.3s;
+    background-color: #0652DD;
+    color: white;
+}
+
+.check a {
+    text-decoration: none;
+    color: blue;
+}
+
+.check i {
+    padding-left: 20px;
+}
+
+.fas {
+    color: green;
+}
+
+.steps ul li {
+    font-size: 20px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.steps_pic img {
+    width: 100%;
+}
+
+.follow {
+    text-align: center;
+}
+
+.why {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.why span {
+    color: blue;
+}
+
+.why i {
+    color: blue;
+    padding-left: 15px;
+}
+
+.wash {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.wash img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+#treatment {
+    background-color: #2e86de;
+    background-image: url("imgs/shape-a.png");
+}
+
+.safe {
+    padding: 5%;
+    color: white;
+}
+
+.safe h6 {
+    text-transform: uppercase;
+    color: #48dbfb;
+}
+
+.safe h3 {
+    text-transform: uppercase;
+}
+
+.care {
+    padding: 5%;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    margin: 30px;
+    border-radius: 5%;
+}
+
+.care ul li {
+    list-style-type: none;
+}
+
+ul li i {
+    padding-right: 10px;
+    height: 10px;
+}
+
+section {
+    margin: 5%;
+}
+
+.pre_title {
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.title {
+    text-align: center;
+    color: 182C61;
+    margin-bottom: 40px;
+}
+
+.breif {
+    text-align: center;
+    font-size: 20px;
+}
+
+.protect img {
+    width: 100%;
+}
+
+.do-dont_img {
+    display: flex;
+}
+
+.donts img {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 50%;
+    margin-bottom: 60px;
+    flex-direction: column;
+    display: flex;
+}
+
+.dos img {
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 50%;
+    margin-bottom: 60px;
+    flex-direction: column;
+    display: flex;
+}
+
+.questin_answer {
+    text-align: center;
+    margin: 2%;
+    padding: 1%;
+}
+
+.questin_answer h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: blue;
+    padding: 1%;
+}
+
+.questin_answer h1 {
+    text-transform: uppercase;
+}
+
+.question_btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.question_btn button {
+    border: solid 1px silver;
+    padding: 7px 31px;
+    border-radius: 11px;
+    transition: 0.3s;
+    color: black;
+    margin: 2%;
+}
+
+.question_btn button:hover {
+    color: #0097e6;
+}
+
+.question_btn span {
+    float: left;
+}
+
+.question_btn i {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.question_table {
+    width: 100%;
+    margin: 3%;
+}
+
+.question_table td {
+    border: 1px solid #ced6e0;
+    padding: 10px;
+}
+
+.question_table td span {
+    float: left;
+}
+
+.question_table ul li {
+    padding: 2%;
+}
+
+.novel {
+    display: none;
+}
+
+.basics tr td span {
+    font-weight: bold;
+}
+
+.novel p {
+    padding-top: 5%;
+    font: 20px;
+}
+
+.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.question_table table td button {
+    border: none;
+    outline: none;
+    background-color: white;
+    box-shadow: none;
+    width: 100%;
+}
+
+.question_table table {
+    display: none;
+}
+
+.basics .btn:focus {
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+}
+
+.basics .btn i {
+    float: right;
+}
+
+.basics .btn span {
+    text-align: left;
+}
+
+.basics .btn:hover {
+    color: #0097e6;
+}
+
+#SSS {
+    list-style: none;
+}
+
+#SSS li::before {
+    content: "\2022";
+    color: blue;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.update {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 24vw;
+    text-align: left;
+    padding: 1%;
+    float: left;
+    margin: 1%
+}
+
+.update_img img {
+    width: 100%;
+}
+
+.card p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blog {
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.latest h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#contact_us {
+    background-color: #192a56;
+    background-image: url("imgs/shape-a.png");
+}
+
+.intro {
+    color: white;
+}
+
+.intro i {
+    color: red;
+}
+
+.intro p {
+    padding-top: 1%;
+}
+
+.intro_social {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.intro_social button {
+    border: solid 1px;
+    padding: 0px 10px;
+    transition: 0.3s;
+    font-size: 15px;
+    width: 300px;
+    margin: 5% 0;
+    height: 35px;
+}
+
+#facebook {
+    background-color: rgb(52, 52, 243);
+    color: white;
+}
+
+#instagram {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+#twitter {
+    background-color: #48dbfb;
+    color: white;
+}
+
+.intro p {
+    color: grey;
+}
+
+.intro_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro_links span {
+    text-transform: uppercase;
+    color: white;
+}
+
+.intro_links a {
+    text-decoration: none;
+    padding: 1%;
+    color: gray;
+}
+
+.intro_end hr {
+    margin: 2% 0;
+}
+
+.intro_end {
+    padding-top: 1%;
+    color: grey;
+}
+
+.intro_end p {
+    padding-top: 3%;
+}
+
+@media (max-width:1023px) {
+    section {
+        margin-top: 30px;
+    }
+    .transmission {
+        display: flex;
+        flex-direction: column;
+    }
+    .symptom {
+        display: flex;
+        flex-direction: column;
+    }
+    .care {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .intro_social {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro_links {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .update {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .update p {
+        font-weight: bold;
+    }
+    .update span {
+        font-size: 20px;
+    }
+    .check {
+        flex-direction: column;
+        align-items: center;
+    }
+    .check a {
+        margin-top: 10px;
+    }
+    .main_btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_btn button {
+        width: 80%;
+    }
+    .main_line h1 {
+        font-size: 50px;
+    }
+    .main_line span {
+        font-size: 20px;
+    }
+    .do-dont_img {
+        margin-top: 20px;
+    }
+    .basics {
+        width: 100%;
+        text-align: left;
+        transition: 0.3s;
+    }
+    .basics span {
+        font-size: 15px;
+    }
+    .question_table {
+        margin: 20px 0 0 0;
+    }
+    .wash {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .wash img {
+        width: 15%;
+    }
+    .update {
+        flex-direction: row;
+    }
+    #facebook,
+    #twitter,
+    #instagram {
+        font-size: 20px;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1213px) {
+    nav {
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+    }
+    nav .menu-btn i {
+        display: block;
+    }
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+    nav ul {
+        position: fixed;
+        top: 40px;
+        left: -100%;
+        background: white;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:checked~ul {
+        left: -20px;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+    ul li #do_btn {
+        margin: 40px 0;
+        width: 100%;
+    }
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+    nav ul li a:hover {
+        background: none;
+        color: blue;
+    }
+}
